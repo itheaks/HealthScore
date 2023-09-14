@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "379898393033",
+    "project_id": "fun-with-ip-df613",
+    "storage_bucket": "fun-with-ip-df613.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379898393033:android:8cd1cd0e97c91cc1bc7818",
+        "android_client_info": {
+          "package_name": "com.example.xyz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379898393033-cu8dvfrs55bs2gp3iag61m5c76j4on0r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.xyz",
+            "certificate_hash": "dec53baa4453d390f314cfcd9d49f31ea256efce"
+          }
+        },
+        {
+          "client_id": "379898393033-ng7brpov78ml61hqtaecavinde8vtheb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtEk6zTRmpPoPz0MRAIOdgczj5wOtFZII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379898393033-ng7brpov78ml61hqtaecavinde8vtheb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
