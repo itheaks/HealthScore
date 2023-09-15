@@ -29,9 +29,6 @@ class _ChatBotPageState extends State<ChatBotPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Chatbot"),
-      ),
       body: Center(
         child: Text("Chatbot will be displayed here."),
       ),

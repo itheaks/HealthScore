@@ -19,8 +19,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
-    Home1Screen(),
     Course1Screen(),
+    Home1Screen(),
     ChatBotPage(),
     QuizScreen(),
     ProfileScreen(),
@@ -39,11 +39,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Center(child: Text("Welcome to IdeaProtect")),
+        backgroundColor: Colors.pinkAccent.shade100,
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
+        //type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
         onTap: (index) {
           setState(() {
@@ -52,15 +53,17 @@ class _HomePageState extends State<HomePage> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset("assets/home1.png"),
+            icon: Icon(Icons.home),
             label: "Home",
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("assets/course1.png"),
+            icon: Icon(Icons.library_books),
             label: "Course",
           ),
           BottomNavigationBarItem(
             icon: Container(
+              height: 65,
+              width: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.pink,
@@ -73,14 +76,18 @@ class _HomePageState extends State<HomePage> {
             label: "Chatbot",
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("assets/quiz.png"),
+            icon: Icon(Icons.quiz),
             label: "Quiz",
           ),
           BottomNavigationBarItem(
-            icon: Image.asset("assets/profile.png"),
+            icon: Icon(Icons.account_circle),
             label: "Profile",
           ),
         ],
+        selectedItemColor: Colors.purple,
+        unselectedItemColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.pinkAccent.shade100,
       ),
     );
   }
