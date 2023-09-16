@@ -5,19 +5,19 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'downloading_progress_dialog.dart';
 import 'package:http/http.dart';
 
-class Chapter1 extends StatefulWidget {
+class Chapter4 extends StatefulWidget {
   @override
-  _Chapter1State createState() => _Chapter1State();
+  _Chapter4State createState() => _Chapter4State();
 }
 
-class _Chapter1State extends State<Chapter1> {
+class _Chapter4State extends State<Chapter4> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fpatents.mp4?alt=media&token=8e987135-84eb-43f9-8222-b40af2c5b0da',
+      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Find.mp4?alt=media&token=b6fb45f7-91a8-48ac-bb2a-5f85bc2352c5',
     )..initialize().then((_) {
       setState(() {});
     });
@@ -35,7 +35,7 @@ class _Chapter1State extends State<Chapter1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chapter 1: Patents'),
+        title: Text('Chapter 4: Industrial Design'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -69,7 +69,7 @@ class _Chapter1State extends State<Chapter1> {
                   //     },
                   //     child: Text('Open Notes'),
                   //   ),
-                  //
+
                   // ),
                   Positioned(
                     top: 8,
@@ -100,7 +100,7 @@ class _Chapter1State extends State<Chapter1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chapter 1 Patents',
+                    'Chapter 4 Industrial Design',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -108,43 +108,39 @@ class _Chapter1State extends State<Chapter1> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Definition: A patent is an exclusive right granted for an innovation that provides a new way of doing something or offers a new technical solution to a problem.',
+                    'Definition: The word \'Design‘ is defined as the features of shape, configuration, pattern, ornament or composition of lines or colours applied to any article. The main object of registration of industrial Designs is to protect and incentivize the original creativity of the originator and encourage others to work towards the art of creativity.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Eligibility Criteria: To qualify for a patent, an invention must be novel (not in the public domain), non-obvious to skilled individuals in the field, and of industrial use.',
+                    'Eligibility Criteria: Design must be novel or original and should be significantly distinguishable from the already registered Designs existing in the public domain.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Acts & Laws: In India, patents are regulated by the Patent Act of 1970.',
+                    'Acts and Laws: In India, Industrial Designs are governed under \'The Designs Act‘, 2000 and \'Design Rules‘, 2001 and have been amended from time to time.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Administration: The administration of matters pertaining to patents is carried out by the Office of CGPDTM, under DPIIT, Ministry of Commerce and Industry, GoI.',
+                    'Administration: The administration of matters pertaining to Industrial Designs is carried out by the Office of CGPDTM, GoI under DPIIT.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Right: A patent owner has the right to decide who may or may not use the patented invention.',
+                    'Rights: Registration of Design ensures the exclusive rights of the applicant on the Design. The Design registration confers a monopolistic right to the proprietor by which he can legally exclude others from reproducing, manufacturing, selling, or dealing in the said registered Design without his prior consent. The owner can prevent the registered Design products from piracy and imitation.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Validity: Patent Rights are protected for a period of 20 years. In return, the process of the invention must be disclosed in the public domain.',
+                    'Validity: The registered Designs are protected for 10 years in India and can be extended by 5 years after making a renewal application.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Exceptions: As per Section 47 of the Act, a patent may be used by any person for teaching and research purposes. It will not be considered an infringement.',
+                    'Items which cannot be registered as Industrial Design: Flags, emblems or signs of any country, and any Industrial Design which is against public moral values.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Items that cannot be patented: According to The Patent Act, 1970, the following items fall under the category of no-patentability criteria: a discovery, scientific theory or mathematical method; a computer program; a presentation of information; a procedure for surgical or therapeutic treatment, or diagnosis, to be practiced on humans or animals; Software and business methods; Medical methods; Perpetual motion machines; Inventions which are contrary to Law or Morality or injurious to public health; and Mere arrangement or re-arrangement of known devices.',
+                    'Treaties/Conventions/Agreements: Hague Agreement for international registration (1925); Locarno Agreement (1968) for international classification.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Treaties/Conventions/Agreements: To ensure and regulate the hassle-free exchange of IPR related activities amongst all the nations, the United Nations (UN) has created an organization called the World Intellectual Property Organization (WIPO) in Geneva. This agency is at the forefront of imparting knowledge about IP and governs international filing and registration of IP through various Conventions and Treaties like Paris Conventions, Patent Cooperation Treaty (PCT), Budapest Treaty, Strasbourg Agreement Concerning the International Patent Classification, Patent Law Treaty, etc.',
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Additional Information: - Patents are awarded not only for major scientific breakthroughs but also for minor improvements over existing inventions. - Avoid public disclosure of an invention before patenting: Generally, an invention that has been either published or publicly displayed cannot be patented, as the claimed invention will lose the \'Novelty\' criterion. - In our daily life, we use many patented items, such as toothbrush, toothpaste, shoes, pen, eyeglasses, textiles, mobile phones, wristwatch, bicycle, scooter, car, television, cold drinks, beverages, and many more. - A single product may contain several inventions (patents) e.g. the laptop computer, car, and mobile phone contain scores of inventions, working together. - \'Prior Art Search\' (information lying in the public domain before the filing of the patent application) is a critical step prior to the filing of the Patent application. - There is no such term as \'Universal Patent\' or \'World Patent\' or \'International Patent\' as the patent rights are territorial. An application for a patent must be filed with a \'Patent Office\' of the country in which one wishes to seek patent protection. - If one wishes to seek patent protection in several countries worldwide, it is preferred to file an international patent under the Patent Cooperation Treaty (PCT). - In general, Indian residents are required to file the patent application first in India.',
+                    'Additional Information: Designs are registered in different classes as per the Locarno Agreement, 1968.',
                   ),
                 ],
               )

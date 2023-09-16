@@ -30,8 +30,11 @@ class _ChatBotPageState extends State<ChatBotPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("Chatbot will be displayed here."),
-      ),
+        child: Text(
+        'Loading...',
+        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+    ),
+    ),
     );
   }
 }

@@ -5,19 +5,19 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'downloading_progress_dialog.dart';
 import 'package:http/http.dart';
 
-class Chapter1 extends StatefulWidget {
+class Chapter3 extends StatefulWidget {
   @override
-  _Chapter1State createState() => _Chapter1State();
+  _Chapter3State createState() => _Chapter3State();
 }
 
-class _Chapter1State extends State<Chapter1> {
+class _Chapter3State extends State<Chapter3> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fpatents.mp4?alt=media&token=8e987135-84eb-43f9-8222-b40af2c5b0da',
+      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Ftm.mp4?alt=media&token=8dd09d0e-8fd5-4607-9e7f-9e0f9a5b2bab',
     )..initialize().then((_) {
       setState(() {});
     });
@@ -35,7 +35,7 @@ class _Chapter1State extends State<Chapter1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chapter 1: Patents'),
+        title: Text('Chapter 3: Tradmarks'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -69,8 +69,8 @@ class _Chapter1State extends State<Chapter1> {
                   //     },
                   //     child: Text('Open Notes'),
                   //   ),
-                  //
-                  // ),
+                  //  ),
+
                   Positioned(
                     top: 8,
                     right: 8,
@@ -100,7 +100,7 @@ class _Chapter1State extends State<Chapter1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chapter 1 Patents',
+                    'Chapter 3 Trademarks',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -108,44 +108,69 @@ class _Chapter1State extends State<Chapter1> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Definition: A patent is an exclusive right granted for an innovation that provides a new way of doing something or offers a new technical solution to a problem.',
+                    'Definition: A Trademark (or Trade Mark) is a unique symbol that is capable of identifying as well as differentiating products or services of one organization from those of others. The word \'Mark‘ stands for a sign, design, phrase, slogan, symbol, name, numeral, devise or a combination of these. Essentially, the Trademark is anything that identifies a brand to a common consumer.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Eligibility Criteria: To qualify for a patent, an invention must be novel (not in the public domain), non-obvious to skilled individuals in the field, and of industrial use.',
+                    'Eligibility Criteria: Distinctiveness - it should be unique and should not be having similarities to the existing marks. Descriptiveness - Trademark should not be describing the description of the concerned goods or services. However, descriptive words may be registered if they acquire "secondary meaning", such as the brand name \'Apple‘ of a company manufacturing electronic gadgets.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Acts & Laws: In India, patents are regulated by the Patent Act of 1970.',
+                    'Acts & Laws: In India, Trademarks are governed under The Trademarks Act, 1999 and ruled under Trademarks Rules, 2002.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Administration: The administration of matters pertaining to patents is carried out by the Office of CGPDTM, under DPIIT, Ministry of Commerce and Industry, GoI.',
+                    'Administration: The administration of matters pertaining to Trademarks is carried out by the Office of CGPDTM, GoI under DPIIT.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Right: A patent owner has the right to decide who may or may not use the patented invention.',
+                    'Rights: Following rights are conferred to a Trademark holder: Right to exclusive use; Right to seek statutory remedy against an infringement; Right of registered trademark holder of the identical trademark; Right to assign; and Right to alter registered trademark.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Validity: Patent Rights are protected for a period of 20 years. In return, the process of the invention must be disclosed in the public domain.',
+                    'Validity: In India, a registered Trademark is valid for 10 years. The period can be extended every 10 years, perpetually.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Exceptions: As per Section 47 of the Act, a patent may be used by any person for teaching and research purposes. It will not be considered an infringement.',
+                    'What cannot be registered as Trademarks: The marks which cannot distinguish the goods or services of one person from that of another cannot be registered; Descriptive trademarks cannot be registered; hurt religious sentiments, are obscene cannot be registered; Well-known Trademark cannot be registered even if the goods are not similar.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Items that cannot be patented: According to The Patent Act, 1970, the following items fall under the category of no-patentability criteria: a discovery, scientific theory or mathematical method; a computer program; a presentation of information; a procedure for surgical or therapeutic treatment, or diagnosis, to be practiced on humans or animals; Software and business methods; Medical methods; Perpetual motion machines; Inventions which are contrary to Law or Morality or injurious to public health; and Mere arrangement or re-arrangement of known devices.',
+                    'Treaties/Conventions/Agreements: The Madrid Agreement for International Registration of Marks (1891); Nice Agreement for International Classification of Goods and Services (1957); the Trademark Law Treaty (TLT) (1994); Vienna Agreement (1973) for the Classification of Figurative Marks.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Treaties/Conventions/Agreements: To ensure and regulate the hassle-free exchange of IPR related activities amongst all the nations, the United Nations (UN) has created an organization called the World Intellectual Property Organization (WIPO) in Geneva. This agency is at the forefront of imparting knowledge about IP and governs international filing and registration of IP through various Conventions and Treaties like Paris Conventions, Patent Cooperation Treaty (PCT), Budapest Treaty, Strasbourg Agreement Concerning the International Patent Classification, Patent Law Treaty, etc.',
+                    'Additional Information:',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Additional Information: - Patents are awarded not only for major scientific breakthroughs but also for minor improvements over existing inventions. - Avoid public disclosure of an invention before patenting: Generally, an invention that has been either published or publicly displayed cannot be patented, as the claimed invention will lose the \'Novelty\' criterion. - In our daily life, we use many patented items, such as toothbrush, toothpaste, shoes, pen, eyeglasses, textiles, mobile phones, wristwatch, bicycle, scooter, car, television, cold drinks, beverages, and many more. - A single product may contain several inventions (patents) e.g. the laptop computer, car, and mobile phone contain scores of inventions, working together. - \'Prior Art Search\' (information lying in the public domain before the filing of the patent application) is a critical step prior to the filing of the Patent application. - There is no such term as \'Universal Patent\' or \'World Patent\' or \'International Patent\' as the patent rights are territorial. An application for a patent must be filed with a \'Patent Office\' of the country in which one wishes to seek patent protection. - If one wishes to seek patent protection in several countries worldwide, it is preferred to file an international patent under the Patent Cooperation Treaty (PCT). - In general, Indian residents are required to file the patent application first in India.',
+                    'Designation of Trademark Symbols',
                   ),
+                  SizedBox(height: 8),
+                  Text(
+                    '™ Represents that the Trademark is unregistered. This mark can be used for promoting the goods of the company.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    '℠ Represents that the Trademark is unregistered. This mark can be used for promoting brand services.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    '® Represents a registered Trademark/Service. The applicant of the registered Trademark is its legal owner.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Classification of Trademarks: Goods and Services under Trademarks are classified as per the \'Nice Agreement‘ (1957) administered by WIPO.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Registration of a Trademark is Not Compulsory: However, registration provides certain advantages to the proprietor of the Trademark. In case of legal suits, a registered Trademark can serve as potent evidence of the lawful proprietorship of the Trademark. No legal course of action can be taken against the unlawful use of an unregistered Trademark.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Types of Trademark Registered in India: Distinctive General Word (\'Apple‘, an IT company); Distinctive Personal Names (\'Ford‘, an Automotive company); Picture (Alligator, a textile company); Number (\'4711‘, a perfume company); Slogan (\'Drink it to believe it‘, a cold drink company). Sound or smell is registrable as a mark, as long as it is distinct and can be reproduced graphically.',
+                  ),
+
                 ],
               )
             ),

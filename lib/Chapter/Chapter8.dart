@@ -5,19 +5,19 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'downloading_progress_dialog.dart';
 import 'package:http/http.dart';
 
-class Chapter1 extends StatefulWidget {
+class Chapter8 extends StatefulWidget {
   @override
-  _Chapter1State createState() => _Chapter1State();
+  _Chapter8State createState() => _Chapter8State();
 }
 
-class _Chapter1State extends State<Chapter1> {
+class _Chapter8State extends State<Chapter8> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fpatents.mp4?alt=media&token=8e987135-84eb-43f9-8222-b40af2c5b0da',
+      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fsicld.mp4?alt=media&token=def08fcd-72cb-4e43-bd9c-4a624ae5d0d4',
     )..initialize().then((_) {
       setState(() {});
     });
@@ -35,7 +35,7 @@ class _Chapter1State extends State<Chapter1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chapter 1: Patents'),
+        title: Text('Chapter 8: SICLD'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -100,7 +100,8 @@ class _Chapter1State extends State<Chapter1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chapter 1 Patents',
+                    'Chapter 8 Semiconductor Integrated Circuits Layout Design Registry'
+                        '.',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -108,43 +109,47 @@ class _Chapter1State extends State<Chapter1> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Definition: A patent is an exclusive right granted for an innovation that provides a new way of doing something or offers a new technical solution to a problem.',
+                    'Definition: \'Semiconductor Integrated Circuit\' is defined as the product having transistors or any circuitry elements, which are formed on a semiconductor/insulating material which is designed to perform an electronic circuitry function. \'Layout-Design\' means a layout if circuitry elements like transistors, resistors, capacitors, etc. and lead wires connecting all components have been articulated in a semiconductor integrated circuit.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Eligibility Criteria: To qualify for a patent, an invention must be novel (not in the public domain), non-obvious to skilled individuals in the field, and of industrial use.',
+                    'Eligibility: The layout design should be original, there must be distinctiveness in the Design, it must be novel and capable of distinguishing from any other layout Design, and the Design must not be exploited commercially anywhere in India or a Convention Country.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Acts & Laws: In India, patents are regulated by the Patent Act of 1970.',
+                    'Acts/Laws: Semiconductor Integrated Circuits Layout Design Act, 2000 and Semiconductor Integrated Circuits Layout Design Rules, 2001.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Administration: The administration of matters pertaining to patents is carried out by the Office of CGPDTM, under DPIIT, Ministry of Commerce and Industry, GoI.',
+                    'Administration: In India, the administration of the SICLD is under the control of DPIIT, Ministry of Commerce and Industry, GoI.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Right: A patent owner has the right to decide who may or may not use the patented invention.',
+                    'Rights: The owner of the SICLD has the exclusive right to reproduce by any means the registered layout design or any substantial portion of it.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Validity: Patent Rights are protected for a period of 20 years. In return, the process of the invention must be disclosed in the public domain.',
+                    'Validity: Ten years from the date of filing an application. If the design is already being used, the date of protection will be counted from the date of first commercial exploitation anywhere in India or in any country, whichever is earlier. If the creator is already using the design, he will get the ownership automatically.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Exceptions: As per Section 47 of the Act, a patent may be used by any person for teaching and research purposes. It will not be considered an infringement.',
+                    'Treaties/Conventions: Washington Treaty on Intellectual Property in respect of Integrated Circuits, 1989. India has signed this treaty, but it is not in force as of now. The international legal framework has kept it open to the member countries to protect such designs under the sui generis law.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Items that cannot be patented: According to The Patent Act, 1970, the following items fall under the category of no-patentability criteria: a discovery, scientific theory or mathematical method; a computer program; a presentation of information; a procedure for surgical or therapeutic treatment, or diagnosis, to be practiced on humans or animals; Software and business methods; Medical methods; Perpetual motion machines; Inventions which are contrary to Law or Morality or injurious to public health; and Mere arrangement or re-arrangement of known devices.',
+                    'Acts Not Considered as an Infringement: The acts like scientific evaluation, analysis, research or teaching, do not constitute an act of infringement. If a person, on the basis of scientific evaluation or analysis of a registered Layout-Design, creates another Layout- Design which is original within the meaning of Sub-section (2) of Section 7 of The Semiconductor Integrated Circuits Layout-Design Act, 2000, that person shall have the right to incorporate such another Layout-Design in a Semiconductor Integrated Circuit. Such incorporation or performance of any act shall not be regarded as infringement.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Treaties/Conventions/Agreements: To ensure and regulate the hassle-free exchange of IPR related activities amongst all the nations, the United Nations (UN) has created an organization called the World Intellectual Property Organization (WIPO) in Geneva. This agency is at the forefront of imparting knowledge about IP and governs international filing and registration of IP through various Conventions and Treaties like Paris Conventions, Patent Cooperation Treaty (PCT), Budapest Treaty, Strasbourg Agreement Concerning the International Patent Classification, Patent Law Treaty, etc.',
+                    'Additional Information:',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Additional Information: - Patents are awarded not only for major scientific breakthroughs but also for minor improvements over existing inventions. - Avoid public disclosure of an invention before patenting: Generally, an invention that has been either published or publicly displayed cannot be patented, as the claimed invention will lose the \'Novelty\' criterion. - In our daily life, we use many patented items, such as toothbrush, toothpaste, shoes, pen, eyeglasses, textiles, mobile phones, wristwatch, bicycle, scooter, car, television, cold drinks, beverages, and many more. - A single product may contain several inventions (patents) e.g. the laptop computer, car, and mobile phone contain scores of inventions, working together. - \'Prior Art Search\' (information lying in the public domain before the filing of the patent application) is a critical step prior to the filing of the Patent application. - There is no such term as \'Universal Patent\' or \'World Patent\' or \'International Patent\' as the patent rights are territorial. An application for a patent must be filed with a \'Patent Office\' of the country in which one wishes to seek patent protection. - If one wishes to seek patent protection in several countries worldwide, it is preferred to file an international patent under the Patent Cooperation Treaty (PCT). - In general, Indian residents are required to file the patent application first in India.',
+                    '- Although the first use of the layout design anywhere is sufficient to claim protection, the creator should register the design to avoid infringement.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    '- Any person who contravenes and infringes a registered Layout- Design, as per the provision under the Act, will be punished with imprisonment for a term extendable to three years and imposition of a fine ranging from ₹ 50, 000 to 10,00,000, or with both.',
                   ),
                 ],
               )

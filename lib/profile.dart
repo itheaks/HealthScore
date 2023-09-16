@@ -12,8 +12,8 @@ class ProfileScreen extends StatelessWidget {
 
   final List<String> imageDescriptions = [
     "Flutter Developer of the Team",
-    "AI Chatbot Developer of the Team",
-    "Researcher and Content maker of the team",
+    "Developer Coordinator of the Team",
+    "Researcher and Content maker of the Team",
     "UI and Figma Designer of the Team",
     "Firebase, API controller of the Team",
     "Video editor and maker of the Team",
@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Text(
-            "About US",
+            "About Us",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.black,
@@ -79,3 +79,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

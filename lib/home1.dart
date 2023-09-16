@@ -1,23 +1,32 @@
 import 'package:flutter/material.dart';
 import 'Chapter/Chapter1.dart';
+import 'Chapter/Chapter10.dart';
+import 'Chapter/Chapter2.dart';
+import 'Chapter/Chapter3.dart';
+import 'Chapter/Chapter4.dart';
+import 'Chapter/Chapter5.dart';
+import 'Chapter/Chapter6.dart';
+import 'Chapter/Chapter7.dart';
+import 'Chapter/Chapter8.dart';
+import 'Chapter/Chapter9.dart';
 
 class Home1Screen extends StatelessWidget {
   final List<String> boxTexts = [
-    'Patents', 'Copyrights', 'Trademarks', 'Industrial', 'Geographical',
-    'Trade Secrets', 'Traditional', 'SICLD', 'Plants', 'Biodiversity',
+    'Patents', 'Copyrights', 'Trademarks', 'Industrial Design', 'GI Tag',
+    'Trade Secrets', 'Traditional\nKnowledge', 'SICLD', 'Plants', 'Biodiversity',
   ];
 
   final List<Widget> screenList = [
     Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
-    Chapter1(),
+    Chapter2(),
+    Chapter3(),
+    Chapter4(),
+    Chapter5(),
+    Chapter6(),
+    Chapter7(),
+    Chapter8(),
+    Chapter9(),
+    Chapter10(),
     // Add more screens here as needed
   ];
 
@@ -30,7 +39,7 @@ class Home1Screen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              'Lesson Section',
+              'Learning Section',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -95,7 +104,7 @@ class Home1Screen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Lesson', // Add the welcome text here
+                          'Chapter', // Add the welcome text here
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,

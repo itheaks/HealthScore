@@ -5,19 +5,19 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'downloading_progress_dialog.dart';
 import 'package:http/http.dart';
 
-class Chapter1 extends StatefulWidget {
+class Chapter6 extends StatefulWidget {
   @override
-  _Chapter1State createState() => _Chapter1State();
+  _Chapter6State createState() => _Chapter6State();
 }
 
-class _Chapter1State extends State<Chapter1> {
+class _Chapter6State extends State<Chapter6> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fpatents.mp4?alt=media&token=8e987135-84eb-43f9-8222-b40af2c5b0da',
+      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fts.mp4?alt=media&token=bc5ccad0-41de-44bf-bf51-4e8babdbd28b',
     )..initialize().then((_) {
       setState(() {});
     });
@@ -35,7 +35,7 @@ class _Chapter1State extends State<Chapter1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chapter 1: Patents'),
+        title: Text('Chapter 6: Trade Secrets'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -100,7 +100,7 @@ class _Chapter1State extends State<Chapter1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chapter 1 Patents',
+                    'Chapter 6 Trade Secrets',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -108,43 +108,55 @@ class _Chapter1State extends State<Chapter1> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Definition: A patent is an exclusive right granted for an innovation that provides a new way of doing something or offers a new technical solution to a problem.',
+                    'Definition: Trade Secret deals with a practice or a process of a company that is generally not known outside the company. The confidential secret provides the company with a commercial advantage over its rivals and is often a product of internal R&D. Trade Secret document comprises of \'technical information\' involving manufacturing processes, experimental research data, formulas, recipes, software algorithms, and \'commercial information\' comprising of marketing strategies and a list of product/process recipients. The document may also have a combination of elements, each of which by itself is in the public domain, but where the combination, which is kept secret, provides a competitive advantage.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Eligibility Criteria: To qualify for a patent, an invention must be novel (not in the public domain), non-obvious to skilled individuals in the field, and of industrial use.',
+                    'Eligibility: For a product/process to qualify as a Trade Secret, the information should be of commercial value, should not be in the public domain, and known to a limited group of people. The legal owner/s of the secret must ensure taking reasonable steps to keep the secret information and agreements (if any) confidential.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Acts & Laws: In India, patents are regulated by the Patent Act of 1970.',
+                    'Acts/Laws: In India, there is no specific legislation regarding Trade Secrets. However, these are governed under Section 27 of ‘The Indian Contract Act, 1872.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Administration: The administration of matters pertaining to patents is carried out by the Office of CGPDTM, under DPIIT, Ministry of Commerce and Industry, GoI.',
+                    'Administration: This aspect of IP is governed under the Indian Contract Act and administered by the Ministry of Law and Justice.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Right: A patent owner has the right to decide who may or may not use the patented invention.',
+                    'Rights: The owner of the Trade Secret has the legal right to use the secret for economic gains and can sell the secret to anybody for any length of time.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Validity: Patent Rights are protected for a period of 20 years. In return, the process of the invention must be disclosed in the public domain.',
+                    'Validity: Contrary to the other forms of IP, a Trade Secret protection has no time period. Many Trade Secrets are more than 100 years old. In addition, there is no formal registration procedure/form to be followed/filled for maintaining a Trade Secret. In simple terms, Trade Secrets are protected without registration. Also, there is no annual renewal fee for keeping the Trade Secret a secret.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Exceptions: As per Section 47 of the Act, a patent may be used by any person for teaching and research purposes. It will not be considered an infringement.',
+                    'Exceptions: A trade secret owner cannot stop others from using the same technical or commercial information if anyone develops such information independently by himself through the reverse engineering or marketing analysis or the owner himself declares it publically.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Items that cannot be patented: According to The Patent Act, 1970, the following items fall under the category of no-patentability criteria: a discovery, scientific theory or mathematical method; a computer program; a presentation of information; a procedure for surgical or therapeutic treatment, or diagnosis, to be practiced on humans or animals; Software and business methods; Medical methods; Perpetual motion machines; Inventions which are contrary to Law or Morality or injurious to public health; and Mere arrangement or re-arrangement of known devices.',
+                    'Non-Trade Secret Items: The items having toxic substances cannot be protected under trade secrets.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Treaties/Conventions/Agreements: To ensure and regulate the hassle-free exchange of IPR related activities amongst all the nations, the United Nations (UN) has created an organization called the World Intellectual Property Organization (WIPO) in Geneva. This agency is at the forefront of imparting knowledge about IP and governs international filing and registration of IP through various Conventions and Treaties like Paris Conventions, Patent Cooperation Treaty (PCT), Budapest Treaty, Strasbourg Agreement Concerning the International Patent Classification, Patent Law Treaty, etc.',
+                    'Enforcement: If somebody acquires the secret through illegal means or indulge in dishonest use of a Trade Secret acquired through legal agreement, the rightful owner can approach the court to seek an injunction and/or claim financial damage accrued as a result of dishonest commercial practice. If a person/company independently develops a process/technology/product which is already a Trade Secret, it is not considered a violation of Trade Secret protection. The newly developed process/technology can also claim Trade Secret rights.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Additional Information: - Patents are awarded not only for major scientific breakthroughs but also for minor improvements over existing inventions. - Avoid public disclosure of an invention before patenting: Generally, an invention that has been either published or publicly displayed cannot be patented, as the claimed invention will lose the \'Novelty\' criterion. - In our daily life, we use many patented items, such as toothbrush, toothpaste, shoes, pen, eyeglasses, textiles, mobile phones, wristwatch, bicycle, scooter, car, television, cold drinks, beverages, and many more. - A single product may contain several inventions (patents) e.g. the laptop computer, car, and mobile phone contain scores of inventions, working together. - \'Prior Art Search\' (information lying in the public domain before the filing of the patent application) is a critical step prior to the filing of the Patent application. - There is no such term as \'Universal Patent\' or \'World Patent\' or \'International Patent\' as the patent rights are territorial. An application for a patent must be filed with a \'Patent Office\' of the country in which one wishes to seek patent protection. - If one wishes to seek patent protection in several countries worldwide, it is preferred to file an international patent under the Patent Cooperation Treaty (PCT). - In general, Indian residents are required to file the patent application first in India.',
+                    'Treaties/Conventions/Agreements: Paris Convention, 1883 for the Protection of Industrial Property and TRIPS Agreement, 1995 deal partly with the protection of Trade Secret.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    'Additional Information:',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    '• Trade Secrets are not subject to being ―infringed,‖ as with Patents and Copyrights, but are subject to theft.',
+                  ),
+                  SizedBox(height: 8),
+                  Text(
+                    '• Renowned Trade Secrets: Coca-Cola, Google Algorithm, Kentucky Fried Chicken, Dr. Pepper (non-alcoholic, fizzy drink), Listerine (for treatment of allergies, pimples, psoriasis, and insect bites), Lena Blackburne\'s Baseball Rubbing Mud(for roughing the surface of base-ball) and McDonald‘s Big Mac Special Sauce Recipe.',
                   ),
                 ],
               )

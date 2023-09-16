@@ -5,19 +5,19 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'downloading_progress_dialog.dart';
 import 'package:http/http.dart';
 
-class Chapter1 extends StatefulWidget {
+class Chapter7 extends StatefulWidget {
   @override
-  _Chapter1State createState() => _Chapter1State();
+  _Chapter7State createState() => _Chapter7State();
 }
 
-class _Chapter1State extends State<Chapter1> {
+class _Chapter7State extends State<Chapter7> {
   late VideoPlayerController _controller;
 
   @override
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Fpatents.mp4?alt=media&token=8e987135-84eb-43f9-8222-b40af2c5b0da',
+      'https://firebasestorage.googleapis.com/v0/b/fun-with-ip-df613.appspot.com/o/Videos%2Ftk.mp4?alt=media&token=1a8bc9d9-bc2f-468e-99b5-3987fc429526',
     )..initialize().then((_) {
       setState(() {});
     });
@@ -35,7 +35,7 @@ class _Chapter1State extends State<Chapter1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chapter 1: Patents'),
+        title: Text('Chapter 7: Patents'),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -100,7 +100,7 @@ class _Chapter1State extends State<Chapter1> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Chapter 1 Patents',
+                    'Chapter 7 Traditional Knowledge',
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -108,43 +108,39 @@ class _Chapter1State extends State<Chapter1> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Definition: A patent is an exclusive right granted for an innovation that provides a new way of doing something or offers a new technical solution to a problem.',
+                    'Definition: Traditional Knowledge (TK) comprises know-how, knowledge, skills and practices that are traditionally originated and are passed from generation to generation in a community. TK is unique for a community and mark as a cultural identity of the community. Some of the practical examples of TK of India which have gained worldwide popularity are Ayurveda, Unani, Medicinal Formulations (including components, such as turmeric, neem, etc.).',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Eligibility Criteria: To qualify for a patent, an invention must be novel (not in the public domain), non-obvious to skilled individuals in the field, and of industrial use.',
+                    'Protection of TK: TK based on knowledge is not conventionally protected under IP systems. Most of the countries have developed a sui generis system for protecting TK that is inclined towards the dissemination and preservation of TK rather than legal protection associated with it. To protect the spiritual identity and essence of TK in the community/country, means of protection are not totally in tune with the current system of IP protection. TK protection is a way to recognize traditional sources of knowledge and to enable indigenous communities and governments to have a say in the use of such TKs by others.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Acts & Laws: In India, patents are regulated by the Patent Act of 1970.',
+                    'Link between TK and TCE: TK is also linked to Traditional Cultural Expressions (TCEs), commonly known as \'Expressions of Folklore\'. It includes folklore expression in the form of music, dance, art, designs, signs and symbols, names, performances, architecture forms, ceremonies, narratives and handicrafts and any other form of artistic/cultural expressions. TK and TCE form a part of the heritage of the traditional and indigenous community. Some of the prominent TCEs of India include Bharatnatyam of Tamil Nadu, Kuchipudi of Andhara Pradesh, Kalaripayattu martial art of Kerala and many other traditional practices.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Administration: The administration of matters pertaining to patents is carried out by the Office of CGPDTM, under DPIIT, Ministry of Commerce and Industry, GoI.',
+                    'TK and TCE represent the face of the community and its people. These people are given due credit and fair and equitable sharing of the benefits arising from the commercial exploitation of TK and TCE. The execution of the TK protection system led to the revocation of Patents filed in the US and other countries on the medicinal properties of turmeric, neem, amla, etc. which are very well documented in ancient Indian texts.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Right: A patent owner has the right to decide who may or may not use the patented invention.',
+                    'Agreement on TK: The major agreements that shaped the development of the sui generis system for the protection of TK include \'Convention on Biological Diversity (CBD), 1993\', \'Nagoya Protocol, 2010\', International treaty on \'Plant Genetic Resources for Food and Agriculture‘ of the Food and Agriculture Organization (FAO), 2001, \'International Union for the Protection of New Varieties of Plants (UPOV), 1991\'. Agreement on TRIPS through the \'Doha Declaration, 2001\' directed TRIPS to include a perspective on the protection of TK in alignment with CBD. \'WIPO‘s Intergovernmental Committee (IGC) on Intellectual Property and Genetic Resources, Traditional Knowledge and Folklore, 2000\' directed all member States to comply with the protection of TK.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Validity: Patent Rights are protected for a period of 20 years. In return, the process of the invention must be disclosed in the public domain.',
+                    'Protection of TK: India is the only country to set up an institutional mechanism for the protection of TK. The TK documentation is undertaken by the Ministry of Science and Technology and Ministry of AYUSH through the creation of the Traditional Knowledge Digital Library (TKDL) that acts as a central repository of India‘s TK and has played a major role in the cancellation and withdrawal of foreign patent applications based on India‘s TK. The digital library is the major source of documenting India‘s TK in the name of the traditional community as TK holders. The documented TK in the name of TK Holders (community/tribe/local government body/state government/central government) acts as a tool to protect TK from any unlawful rights over existing TKs and to get exclusive IP rights over such TK.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Exceptions: As per Section 47 of the Act, a patent may be used by any person for teaching and research purposes. It will not be considered an infringement.',
+                    'India has taken various legislative and administrative measures to ensure that the TK is protected and fair means of benefit sharing emerging out of TK is undertaken.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Items that cannot be patented: According to The Patent Act, 1970, the following items fall under the category of no-patentability criteria: a discovery, scientific theory or mathematical method; a computer program; a presentation of information; a procedure for surgical or therapeutic treatment, or diagnosis, to be practiced on humans or animals; Software and business methods; Medical methods; Perpetual motion machines; Inventions which are contrary to Law or Morality or injurious to public health; and Mere arrangement or re-arrangement of known devices.',
+                    'Acts/Laws: India has no separate legislation for protecting TCEs, but these can be protected under TK Protection System, Copyrights, Geographical Indications and Trademarks.',
                   ),
                   SizedBox(height: 8),
                   Text(
-                    'Treaties/Conventions/Agreements: To ensure and regulate the hassle-free exchange of IPR related activities amongst all the nations, the United Nations (UN) has created an organization called the World Intellectual Property Organization (WIPO) in Geneva. This agency is at the forefront of imparting knowledge about IP and governs international filing and registration of IP through various Conventions and Treaties like Paris Conventions, Patent Cooperation Treaty (PCT), Budapest Treaty, Strasbourg Agreement Concerning the International Patent Classification, Patent Law Treaty, etc.',
-                  ),
-                  SizedBox(height: 8),
-                  Text(
-                    'Additional Information: - Patents are awarded not only for major scientific breakthroughs but also for minor improvements over existing inventions. - Avoid public disclosure of an invention before patenting: Generally, an invention that has been either published or publicly displayed cannot be patented, as the claimed invention will lose the \'Novelty\' criterion. - In our daily life, we use many patented items, such as toothbrush, toothpaste, shoes, pen, eyeglasses, textiles, mobile phones, wristwatch, bicycle, scooter, car, television, cold drinks, beverages, and many more. - A single product may contain several inventions (patents) e.g. the laptop computer, car, and mobile phone contain scores of inventions, working together. - \'Prior Art Search\' (information lying in the public domain before the filing of the patent application) is a critical step prior to the filing of the Patent application. - There is no such term as \'Universal Patent\' or \'World Patent\' or \'International Patent\' as the patent rights are territorial. An application for a patent must be filed with a \'Patent Office\' of the country in which one wishes to seek patent protection. - If one wishes to seek patent protection in several countries worldwide, it is preferred to file an international patent under the Patent Cooperation Treaty (PCT). - In general, Indian residents are required to file the patent application first in India.',
+                    'Administration: India has created Traditional Knowledge Digital Library (TKDL) and Traditional Knowledge Resource Classification (TKRC) to protect Indian traditional medicinal knowledge and prevent its misappropriation at International Patent Offices',
                   ),
                 ],
               )

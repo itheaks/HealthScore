@@ -4,8 +4,8 @@ import 'Chapter/Chapter1.dart';
 
 class QuizScreen extends StatelessWidget {
   final List<String> boxTexts = [
-    'Patents', 'Copyrights', 'Trademarks', 'Industrial', 'Geographical',
-    'Trade Secrets', 'Traditional', 'SICLD', 'Plants', 'Biodiversity',
+    'Patents', 'Copyrights', 'Trademarks', 'Industrial Design', 'GI Tag',
+    'Trade Secrets', 'Traditional\nKnowledge', 'SICLD', 'Plants', 'Biodiversity',
   ];
 
   final List<Widget> screenList = [
