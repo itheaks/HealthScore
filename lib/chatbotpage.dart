@@ -16,7 +16,8 @@ class _ChatBotPageState extends State<ChatBotPage> {
   _initiateConversation() async {
     try {
       dynamic conversationObject = {
-        'appId': '3dfa880bc2d2cf0b9fcbad8f94b89d11',
+        //'appId': '2d17578650a7522bc47959142bc9d1535',
+        'appId': '2f3f487ccb9d610b21153d20ae76cd65f',
       };
 
       dynamic result = await KommunicateFlutterPlugin.buildConversation(conversationObject);

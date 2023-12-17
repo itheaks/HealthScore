@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:xyz/course1.dart';
 import 'package:xyz/home1.dart';
+import 'package:xyz/mindgames.dart';
+import 'package:xyz/nutrition.dart';
 import 'package:xyz/profile.dart';
 import 'package:xyz/quiz.dart';
+import 'package:xyz/tdee.dart';
 import 'chatbotpage.dart';
 import 'login.dart';
 
@@ -20,10 +23,10 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
     Course1Screen(),
-    Home1Screen(),
+    TdeePage(),
     ChatBotPage(),
-    QuizScreen(),
-    ProfileScreen(),
+    UserDashboard(),
+    Nutrition(),
   ];
 
   Future<void> _signOut(BuildContext context) async {
@@ -39,7 +42,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Welcome to IdeaProtect")),
+        title: Center(child: Text("Welcome to HealthScore")),
         backgroundColor: Colors.pinkAccent.shade100,
       ),
       body: _pages[_currentIndex],
@@ -58,7 +61,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.library_books),
-            label: "Course",
+            label: "TDEE",
           ),
           BottomNavigationBarItem(
             icon: Container(
@@ -77,11 +80,11 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.quiz),
-            label: "Quiz",
+            label: "Games",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
-            label: "About",
+            label: "Nutrition",
           ),
         ],
         selectedItemColor: Colors.purple,
