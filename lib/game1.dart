@@ -143,8 +143,8 @@ class _Game1State extends State<Game1> {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Colors.green,
-              Colors.yellowAccent,
+              Color(0xffebe8b6),
+              Color(0xffdae2ab),
             ],
           ),
         ),

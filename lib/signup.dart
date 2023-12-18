@@ -36,7 +36,7 @@ class _SignupPageState extends State<SignupPage> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Card(
-                elevation: 50,
+                elevation: 10,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Form(
@@ -49,7 +49,7 @@ class _SignupPageState extends State<SignupPage> {
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.blue, // Customize border color
+                                  //color: Colors.blue, // Customize border color
                                 ),
                                 borderRadius: BorderRadius.circular(10),
                               ),
@@ -74,7 +74,7 @@ class _SignupPageState extends State<SignupPage> {
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.green, // Customize border color
+                                  //color: Colors.green, // Customize border color
                                 ),
                                 borderRadius: BorderRadius.circular(10),
                               ),
@@ -100,7 +100,7 @@ class _SignupPageState extends State<SignupPage> {
                             Container(
                               decoration: BoxDecoration(
                                 border: Border.all(
-                                  color: Colors.orange, // Customize border color
+                                  //color: Colors.orange, // Customize border color
                                 ),
                                 borderRadius: BorderRadius.circular(10),
                               ),
@@ -131,7 +131,7 @@ class _SignupPageState extends State<SignupPage> {
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.red, // Customize border color
+                              //color: Colors.red, // Customize border color
                             ),
                             borderRadius: BorderRadius.circular(10),
                           ),
@@ -167,7 +167,7 @@ class _SignupPageState extends State<SignupPage> {
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
-                              color: Colors.purple, // Customize border color
+                              //color: Colors.purple, // Customize border color
                             ),
                             borderRadius: BorderRadius.circular(10),
                           ),

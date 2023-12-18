@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'User Dashboard',
+      title: 'Enjoy the Mind Games',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: UserDashboard(),
     );
@@ -79,7 +79,7 @@ class _UserDashboardState extends State<UserDashboard> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'User Dashboard',
+              'Enjoy the Mind Games',
               style: TextStyle(
                 fontSize: 30,
                 color: Colors.black,
@@ -90,7 +90,7 @@ class _UserDashboardState extends State<UserDashboard> {
             GestureDetector(
               onTap: navigateToGame1,
               child: Container(
-                color: Colors.blue,
+                color: Colors.green,
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
@@ -158,7 +158,7 @@ class _UserDashboardState extends State<UserDashboard> {
             GestureDetector(
               onTap: navigateToGame3,
               child: Container(
-                color: Colors.orange,
+                color: Colors.green,
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [

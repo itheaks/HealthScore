@@ -42,8 +42,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Welcome to HealthScore")),
-        backgroundColor: Colors.pinkAccent.shade100,
+        title: Center(child: Text("Welcome to Health Score")),
+        backgroundColor: Color(0xffb8d695),
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -69,11 +69,11 @@ class _HomePageState extends State<HomePage> {
               width: 250,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.pink,
+                color: Color(0xfffceec1),
               ),
               child: Icon(
                 Icons.chat,
-                color: Colors.white,
+                color: Color(0xff1e8155),
               ),
             ),
             label: "Chatbot",
@@ -87,10 +87,10 @@ class _HomePageState extends State<HomePage> {
             label: "Nutrition",
           ),
         ],
-        selectedItemColor: Colors.purple,
+        selectedItemColor: Color(0xff1e8155),
         unselectedItemColor: Colors.black,
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.pinkAccent.shade100,
+        backgroundColor: Color(0xffb8d695),
       ),
     );
   }

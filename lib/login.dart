@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Padding(
               padding: const EdgeInsets.all(16.0),
               child: Card(
-                elevation: 50,
+                elevation: 10,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Form(

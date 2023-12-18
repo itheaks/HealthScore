@@ -41,7 +41,10 @@ class _Game3State extends State<Game3> {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            colors: [Colors.green, Colors.yellowAccent],
+            colors: [
+              Color(0xffebe8b6),
+              Color(0xffdae2ab),
+            ],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),

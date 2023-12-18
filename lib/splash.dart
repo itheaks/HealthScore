@@ -36,14 +36,14 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           // Place designn.png at the topmost
-          Positioned.fill(
-            top: 0.0,
-            child: Image.asset(
-              'assets/designn.png',
-              width: double.infinity,
-              fit: BoxFit.cover,
-            ),
-          ),
+          // Positioned.fill(
+          //   top: 0.0,
+          //   child: Image.asset(
+          //     'assets/designn.png',
+          //     width: double.infinity,
+          //     fit: BoxFit.cover,
+          //   ),
+          // ),
           // Place IdeaProtect.gif at the center
           Positioned.fill(
             child: Center(
@@ -54,14 +54,14 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
           // Place design.png at the bottommost
-          Positioned.fill(
-            bottom: 0.0,
-            child: Image.asset(
-              'assets/design.png',
-              width: double.infinity,
-              fit: BoxFit.cover,
-            ),
-          ),
+          // Positioned.fill(
+          //   bottom: 0.0,
+          //   child: Image.asset(
+          //     'assets/design.png',
+          //     width: double.infinity,
+          //     fit: BoxFit.cover,
+          //   ),
+          // ),
         ],
       ),
     );
