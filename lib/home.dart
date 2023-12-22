@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.quiz),
-            label: "Games",
+            label: "Play",
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
