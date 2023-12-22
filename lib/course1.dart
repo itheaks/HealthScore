@@ -1,16 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:googleapis/cloudkms/v1.dart';
-import 'package:xyz/Quiz/faq.dart';
-import 'package:xyz/detail.dart';
-import 'package:xyz/healthcareapi.dart';
-import 'package:xyz/mindgames.dart';
-import 'package:xyz/nutrition.dart';
-import 'package:xyz/profile.dart';
-import 'package:xyz/quiz.dart';
-import 'package:xyz/tdee.dart';
-import 'certificate.dart';
-import 'home1.dart';
 
 void main() => runApp(MyApp());
 

@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:xyz/course1.dart';
-import 'package:xyz/home1.dart';
 import 'package:xyz/mindgames.dart';
 import 'package:xyz/nutrition.dart';
-import 'package:xyz/profile.dart';
-import 'package:xyz/quiz.dart';
 import 'package:xyz/tdee.dart';
 import 'chatbotpage.dart';
 import 'login.dart';
